@@ -1,0 +1,270 @@
+*{
+	padding: 0;
+	margin: 0;
+	color:white;
+	line-height: 1em;
+}
+.grid{																/*		Main Grid class					*/
+	display: grid;
+	grid-template-rows: 1fr 2fr 0.5fr 0.05fr;
+}
+#gridOne{															/* 		1 								*/
+	background: #290000;
+}
+#gridTwo{															/*		2 								*/
+	background: #660000; 
+}
+#gridThree{															/*		3 								*/
+	background: #303030;
+}
+#gridFour{
+	background: #2b2b2b;											/* 		4								*/
+}
+header, section, aside, footer{										/*		Margin for website		 		*/
+	margin:0 8em;
+}
+header, section{													/*		Main font 						*/
+	font-family: 'Inconsolata', monospace;
+}
+aside, footer{														/*		Aside, footer font 				*/
+	font-family: sans-serif;
+	font-size: 0.8rem;
+}
+header{																/* 		Grid definition inside 1		*/
+	display:grid;
+	grid-template-rows: 1fr 4fr;
+}
+section{															/* 		Grid definition inside 2		*/
+	display: grid;
+	grid-template-rows: 2fr 0.8fr 3.2fr;
+}
+aside{																/* 		Grid definition inside 3		*/
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap:8em;
+}
+footer{																/* 		Footer padding 					*/
+	padding: 0.4em;
+}
+a{																	/* 		Link properties					*/
+	text-decoration: none;
+}
+.button, input[type='submit']{										/* 		Button display properties		*/
+	text-decoration: none;
+	background: #76c38f;
+	color:#fff;
+	padding: 0.6em 0.8em;
+	border-radius:0.4em;
+	outline: none;
+	border:0;
+	font-size: 0.8rem;
+}
+.button:hover, .button:active, input[type='submit']:hover, input[type='submit']:active{
+	box-shadow: 0 0 0.45em #00ff00,
+				0 0 0.5em #55ee55;
+	cursor: pointer;
+	color:#000;
+	font-weight: bold;
+}
+#gridOne hr{														/*		Horizontal Line on top: 		*/
+	height: 0.1em;
+	color: #76c38f;													/*		For IE 							*/
+	background: #76c38f;											/*		For other Browsers				*/
+}
+.headFont{															/*		Heading fonts 					*/
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: normal;
+}
+.headerGridOne{														/*		1.1								*/
+	display:grid;
+	grid-template-columns: 4fr 9fr;									/* 		Grid definition inside 1.1		*/
+	padding: 3em 0em 1em 0em;
+}
+
+.headerGridTwo{														/*		1.2								*/
+	display: grid;											
+	grid-template-columns: 1fr 5fr 5fr 1fr;							/* 		Grid definition inside 1.2		*/
+}	
+.divHeaderGridOne .headFont{										/* 		The Modernist font properties	*/
+	font-size: 2.3rem;
+	line-height: 0.1em;
+}
+.divHeaderGridTwo ul{												/*		Navigation properties			*/
+	font-family: 'Jura', sans-serif;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 0.2fr;
+	text-align: center;
+	text-transform: uppercase;
+}
+.divHeaderGridTwo ul li a:hover, .divHeaderGridTwo ul li a:active{
+	padding: 0.3em 0.8em;
+	background: #76c38f;
+	border-radius: 0.4em;
+	cursor: pointer;
+}
+.divHeaderGridThree img,.divHeaderGridSix img{						/* 		Arrow for slides Properties		*/
+	margin-bottom: 1em;
+	margin-top: 12em;
+}
+.divHeaderGridThree img:hover,.divHeaderGridSix img:hover{
+	cursor: pointer;
+}
+.divHeaderGridFour{													/* 		Slide Text (left side) 			*/
+	padding: 3em 3em 3em 7em;
+}
+.divHeaderGridFour .headFont{										/* 		Slide Heading (left side)		*/
+	text-align: center;
+	font-size: 3rem;
+}
+.divHeaderGridFive img{												/* 		Slide image 					*/
+	max-width: 380px;
+	border-radius: 15em;
+	border: 1em solid #6b6b6b;
+}
+.divHeaderGridFive{													/* 		Padding for slide image 		*/
+	padding-bottom: 2em;
+}
+.divHeaderGridSix img{												/*		Right slide arrow float 		*/
+	float:right;
+}
+#sectionGridOne{													/* 		2.1								*/
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;							/* 		Grid definition inside 2.1		*/
+	grid-gap: 2em; 
+	margin-top: 3em; 
+}
+#sectionGridOne>div{												/* 		White background in 2.1			*/
+	background: #fff;
+	position: relative;
+}
+#sectionGridOne>div:hover{
+	background: #76c38f;
+	cursor: pointer;
+}
+#sectionGridOne img{												/*		Images in 2.1					*/
+	max-width:120px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#sectionGridOne .headFont{											/* 		Heading in 2.1					*/
+	font-size: 1.5rem;
+}
+#sectionGridOne>div>div{											/* 		Text in 2.1						*/
+	text-align: center;
+	color:#000;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 0 2em 1em 2em;
+}
+#sectionGridTwo{
+	position: relative;
+}
+#sectionGridTwo hr{													/* 		Line behind latest work 		*/		
+	position: relative;	
+	top: 50%;				
+	background: #303030;
+	color: #303030;
+	height: 0.1em;
+	border-color: transparent;
+}
+#sectionGridTwo span{												/* 		Latest work (2.2)				*/
+	background: #303030;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	font-size: 2rem;
+	padding: 0.2em 0.5em;
+	border-radius: 0.4em;
+}
+
+#sectionGridThree{													/* 		Content of Latest Works - 2.3	*/
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;								/* 		Grid definition inside 2.3		*/
+	grid-gap: 2.8em;
+	margin-bottom: 3em;
+}
+#sectionGridThree>div{												/* 		Relative positioning for image name*/
+	position: relative;
+}
+#sectionGridThree img{		 											/* 		Images in latest works	(2.3)	*/
+	width: 99%;
+	height:99%;
+	border:0.3em solid white;
+	display: block;
+	margin: auto;
+	opacity: 0.75;
+}
+#sectionGridThree>div>div{ 											/*		Image Name 						*/
+	position: absolute;
+	bottom: 0.3em;
+	left:0.3em;
+	right: 0em;
+	transform: (-50%,-50%);
+	padding: 2% 33.25%;
+	display: inline;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	color:#fff;
+	font-size:100%;
+}
+aside div{															/* 		Padding in details of 3			*/
+	padding: 2em 0em;
+}
+aside ul{															/* 		Links in details of 3			*/
+	list-style: circle inside url('../images/bullet_2.png') ;
+	font-size:0.8rem;
+
+}
+aside hr{															/*		Lines in details of 3			*/
+	border: none;
+	height: 0.1em;
+	opacity: 0.2;
+	color:white;
+	background-color: white;
+	margin-top:0.6em;
+}
+.green, aside a{													/* 		Green color in details			*/
+	color:#0dbda5;
+}
+.fontDown{
+	font-size: 0.8em;
+}
+input, textarea{													/* 		Input properties				*/
+}
+input[type='text'], input[type='email'], textarea{
+	width: 13em;
+	padding: 0.5em;
+	background-color: #222;
+	border-radius:0.5em;
+	border: none;
+}
+textarea{
+	resize: none;
+}
+input:focus, textarea:focus{
+	outline:none;
+	border: 0.1em groove ;
+	border-radius: 5px;
+	box-shadow: 0 0 0.3em #0dbda5,
+				0 0 0.5em #00ffff
+}
+form div{															/*		Error display 					*/
+	padding: 0.3em 0 ;
+	text-align: left;
+	margin-left: 1em;
+	font-size: 0.7rem;										
+	color:red;
+}	
+footer p{															/* 		Footer left 4			   		*/
+	float: left;
+}
+footer span{														/* 		Footer right 4					*/
+	float: right;
+}
