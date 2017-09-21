@@ -119,9 +119,18 @@ a{																	/* 		Link properties					*/
 	font-size: 3rem;
 }
 .divHeaderGridFive img{												/* 		Slide image 					*/
-	max-width: 380px;
+	width: 380px;
 	border-radius: 15em;
 	border: 1em solid #6b6b6b;
+}
+#imgTwo{
+	display:none;
+}
+#imgThree{
+	display:none;
+}
+#imgFour{
+	display: none;
 }
 .divHeaderGridFive{													/* 		Padding for slide image 		*/
 	padding-bottom: 2em;
@@ -190,13 +199,15 @@ a{																	/* 		Link properties					*/
 	position: relative;
 	width: 23.2em;
 	height: 15.2em;
+	background: red;
+	left: 16%;
+	transform: translate(-50%,0%);
 }
 #sectionGridThree img{	 											/* 		Images in latest works	(2.3)	*/
 	width: 23.2em;
 	height: 15.2em;
 	border:0.3em solid white;
 	display: block;
-	margin: auto;
 	opacity: 0.75;
 }
 #sectionGridThree>div>div{ 											/*		Image Name 						*/
