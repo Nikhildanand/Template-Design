@@ -6,7 +6,7 @@
 }
 .grid{																/*		Main Grid class					*/
 	display: grid;
-	grid-template-rows: 1fr 2fr 0.5fr 0.05fr;
+	grid-template-rows: 0.6fr 2fr 0.5fr 0.05fr;
 }
 #gridOne{															/* 		1 								*/
 	background: #290000;
@@ -36,7 +36,7 @@ header{																/* 		Grid definition inside 1		*/
 }
 section{															/* 		Grid definition inside 2		*/
 	display: grid;
-	grid-template-rows: 2fr 0.8fr 2.2fr;
+	grid-template-rows: 1.6fr 0.8fr 2.4fr;
 }
 aside{																/* 		Grid definition inside 3		*/
 	display: grid;
@@ -137,7 +137,7 @@ a{																	/* 		Link properties					*/
 }
 #sectionGridOne>div{
 	display: grid;
-	grid-template-rows: 4fr 2fr 5fr; 
+	grid-template-rows: 2fr 0.8fr 1.8fr; 
 	background: #fff;
 }
 #sectionGridOne>div:hover{
@@ -188,10 +188,12 @@ a{																	/* 		Link properties					*/
 }
 #sectionGridThree>div{												/* 		Relative positioning for image name*/
 	position: relative;
+	width: 23.2em;
+	height: 15.2em;
 }
-#sectionGridThree img{		 											/* 		Images in latest works	(2.3)	*/
-	width: 99%;
-	height:99%;
+#sectionGridThree img{	 											/* 		Images in latest works	(2.3)	*/
+	width: 23.2em;
+	height: 15.2em;
 	border:0.3em solid white;
 	display: block;
 	margin: auto;
@@ -199,10 +201,9 @@ a{																	/* 		Link properties					*/
 }
 #sectionGridThree>div>div{ 											/*		Image Name 						*/
 	position: absolute;
-	bottom: 0.3em;
+	bottom: 0em;
 	left:0.3em;
 	right: 0em;
-	transform: (-50%,-50%);
 	padding: 2% 33.25%;
 	display: inline;
 	text-align: center;
@@ -263,4 +264,14 @@ footer p{															/* 		Footer left 4			   		*/
 }
 footer span{														/* 		Footer right 4					*/
 	float: right;
+}
+@media only screen and (max-width: 1280px){
+	header, section, aside, footer{										/*		Margin for website		 		*/
+	margin:0 2%;
+	}	
+}
+@media only screen and (max-width: 1100px){
+	header, section, aside, footer{										/*		Margin for website		 		*/
+	margin:0;
+}
 }
