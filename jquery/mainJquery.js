@@ -43,5 +43,27 @@ $(document).ready(function() {
 				$('#submitMessage').html('');
 			}
 		}
+	});	
+	var arr=[];
+	arr[0]=$('#imgOne');
+	arr[1]=$('#imgTwo');
+	arr[2]=$('#imgThree');
+	arr[3]=$('#imgFour');
+	var i=0;
+	$('#right').click(function() {
+		$(arr[i]).fadeOut();
+		if($(arr[i].hide()==true)){
+		if(i==3)
+			i=-1;
+			$(arr[++i]).fadeIn();
+		}
+	});
+	$('#left').click(function() {
+		$(arr[i]).fadeOut();
+		if($(arr[i].hide()==true)){
+		if(i==0)
+			i=4;
+			$(arr[--i]).fadeIn();
+		}
 	});
 });
