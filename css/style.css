@@ -36,7 +36,7 @@ header{																/* 		Grid definition inside 1		*/
 }
 section{															/* 		Grid definition inside 2		*/
 	display: grid;
-	grid-template-rows: 2fr 0.8fr 3.2fr;
+	grid-template-rows: 2fr 0.8fr 2.2fr;
 }
 aside{																/* 		Grid definition inside 3		*/
 	display: grid;
@@ -129,38 +129,34 @@ a{																	/* 		Link properties					*/
 .divHeaderGridSix img{												/*		Right slide arrow float 		*/
 	float:right;
 }
-#sectionGridOne{													/* 		2.1								*/
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;							/* 		Grid definition inside 2.1		*/
-	grid-gap: 2em; 
-	margin-top: 3em; 
+#sectionGridOne{
+	padding-top: 2em;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 3em;
 }
-#sectionGridOne>div{												/* 		White background in 2.1			*/
+#sectionGridOne>div{
+	display: grid;
+	grid-template-rows: 4fr 2fr 5fr; 
 	background: #fff;
-	position: relative;
 }
 #sectionGridOne>div:hover{
 	background: #76c38f;
-	cursor: pointer;
 }
-#sectionGridOne img{												/*		Images in 2.1					*/
-	max-width:120px;
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+#sectionGridOne>div>div>img{
+	width: 120px;
+	position: relative;
+	padding: 2%;
 }
-#sectionGridOne .headFont{											/* 		Heading in 2.1					*/
-	font-size: 1.5rem;
-}
-#sectionGridOne>div>div{											/* 		Text in 2.1						*/
+#sectionGridOne .headFont{
+	font-size: 1.9em;
 	text-align: center;
 	color:#000;
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	padding: 0 2em 1em 2em;
+}
+#sectionGridOne>div>div{
+	text-align: center;
+	color: #000;
+	padding: 5%;
 }
 #sectionGridTwo{
 	position: relative;
